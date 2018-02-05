@@ -14,6 +14,28 @@ export class RegisterService {
   
   getData(){
     this.registrationList = this.firebase.list ('register');
+    return this.registrationList;
+  }
+  
+  insertRegistration(register : Registration)
+  {
+    this.registrationList.push({
+      name: register.name,
+      occupation: register.occupation,
+      address: register.address,
+
+    })
+  }
+
+  updateRegistration(register : Registration){
+    this.registrationList.update(register.$key
+      {
+        name: register.name,
+        occupation: register.occupation,
+        address: register.address,
+  
+      } );
+
   }
 
 }
