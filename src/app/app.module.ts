@@ -34,6 +34,8 @@ import { RegistrationListComponent } from './registration/registration-list/regi
     AppComponent,
     RegistrationComponent,
     RegistrationListComponent,
+    RegistrationComponent,
+    RegistrationListComponent,
   ],
   imports: [
     BrowserModule,

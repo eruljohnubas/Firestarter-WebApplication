@@ -37,5 +37,8 @@ export class RegisterService {
       } );
 
   }
+  deleteRegistration($key : string){
+    this.registrationList.remove($key);
+  }
 
 }
