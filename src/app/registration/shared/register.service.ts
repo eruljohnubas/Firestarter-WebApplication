@@ -28,7 +28,7 @@ export class RegisterService {
   }
 
   updateRegistration(register : Registration){
-    this.registrationList.update(register.$key
+    this.registrationList.update(register.$key,
       {
         name: register.name,
         occupation: register.occupation,
